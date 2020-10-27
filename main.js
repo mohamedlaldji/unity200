@@ -77,8 +77,37 @@ async function onMessage(message)
 						message.reply("Sorry, you're not allowed to command me that.");
 					}
 				break;
-				case 'play':
+				case 'pageT':
+					if(message.member.hasPermission(Discord.Permissions.ALL))
+					{
+						message.author.send("```https://www.facebook.com/TerSho-GaminG-106870354081722/ ```");
+						message.reply("FB: Tersho : <https://www.facebook.com/TerSho-GaminG-106870354081722/> https://cdn.discordapp.com/attachments/759911697829330954/770371127897227314/Tersho2.png");
+					}
+					else
+					{
+						message.reply("Help coming right away...");
+						message.author.send().catch(() =>
+						{
+							message.reply("I couldn't send a direct message to you.. so I'll send you help here.")
+							message.channel.areply("I couldn't send a direct message to you.. so I'll send you help here.")
+						});
+					}
 				break;
+                                case 'page':
+					if(message.member.hasPermission(Discord.Permissions.ALL))
+					{
+						message.author.send("```https://www.facebook.com/Unity0fgamers ```");
+						message.reply(FB UNITY CLAN: <https://www.facebook.com/Unity0fgamers> https://media.discordapp.net/attachments/759911697829330954/763841906584715264/Banner1.png?width=1120&height=560");
+					}
+					else
+					{
+						message.reply("Help coming right away...");
+						message.author.send().catch(() =>
+						{
+							message.reply("I couldn't send a direct message to you.. so I'll send you help here.")
+							message.channel.areply("I couldn't send a direct message to you.. so I'll send you help here.")
+						});
+					}
 			}
 		}
 	}catch(exception)
